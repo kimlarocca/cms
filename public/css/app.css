@@ -10702,3 +10702,19 @@ hr {
   }
 }
 
+.container-white {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+table tr th,
+table tr td {
+  padding: .5rem;
+  margin: 0;
+}
+
+table tr th {
+  border-bottom: solid 1px #393939;
+}
+

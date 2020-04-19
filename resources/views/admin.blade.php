@@ -11,6 +11,6 @@
             </div>
         @endif
 
-        You are logged in! {{ Auth::user()->name }}
+        <user-list/>
     </div>
 @endsection
