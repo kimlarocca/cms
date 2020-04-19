@@ -14,8 +14,8 @@
 Route::get('/', function () {
     return view('auth.login');
 });
-Route::get('/test', function () {
-    return view('test');
+Route::get('/admin', function () {
+    return view('admin');
 });
 
 Route::get('/posts/{post}', 'PostsController@show');
