@@ -20,7 +20,10 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('breadcrumbs', require('./components/Breadcrumbs.vue').default);
 Vue.component('user-list', require('./components/UserList.vue').default);
+Vue.component('page-list', require('./components/PageList.vue').default);
+Vue.component('page-update', require('./components/PageUpdate.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -10309,6 +10309,7 @@ label,
 fieldset {
   clear: both;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 textarea {
@@ -10341,10 +10342,10 @@ button,
   padding: .75rem;
   background-color: #57b8ff;
   color: white;
+  border: 2px solid #57b8ff;
   font-size: .875rem;
   line-height: 1.25rem;
   text-transform: uppercase;
-  border: 2px solid #57b8ff;
   -webkit-transition: 0.2s all linear;
   transition: 0.2s all linear;
   opacity: 1;
@@ -10373,6 +10374,15 @@ button.full-width,
 .button:visited.full-width,
 .button:active.full-width {
   width: 100%;
+}
+
+button.saved,
+.button.saved,
+.button:visited.saved,
+.button:active.saved {
+  background-color: seagreen;
+  color: white;
+  border: 2px solid seagreen;
 }
 
 button.ghost,
@@ -10489,7 +10499,7 @@ button.ghost-secondary:hover,
   color: #272023;
   min-height: 100vh;
   padding: 2rem;
-  background: url("/images/background.jpg") no-repeat center center;
+  background: url("/images/background.jpg") no-repeat center center fixed;
   background-size: cover;
   width: 100%;
   font-weight: 600;
@@ -10576,7 +10586,7 @@ nav a:active {
 nav a:hover,
 nav a:visited:hover,
 nav a:active:hover {
-  color: #ff6c60;
+  color: #272023;
   text-decoration: none;
 }
 
@@ -10619,7 +10629,7 @@ a:active {
 a:hover,
 a:visited:hover,
 a:active:hover {
-  color: #ff6c60;
+  color: #272023;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -10628,6 +10638,16 @@ a:hover.button,
 a:visited:hover.button,
 a:active:hover.button {
   text-decoration: none;
+}
+
+i.link {
+  cursor: pointer;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+i.link:hover {
+  color: #57b8ff;
 }
 
 .caret-right {
@@ -10677,6 +10697,17 @@ hr {
   }
 }
 
+.container-white {
+  padding: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1rem;
+}
+
+.container-white.more-opaque {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .container-smaller {
   max-width: 1000px;
   margin: 0 auto 0 0;
@@ -10700,21 +10731,5 @@ hr {
   .section-padding-50 {
     padding-top: 25px;
   }
-}
-
-.container-white {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 1rem;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
-}
-
-table tr th,
-table tr td {
-  padding: .5rem;
-  margin: 0;
-}
-
-table tr th {
-  border-bottom: solid 1px #393939;
 }
 

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Page;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/users', 'UserController')->middleware('auth:api');
+
+Route::get('pages', 'PageController@index');
+Route::get('pages/{page}', 'PageController@show');
+Route::post('pages', 'PageController@store');
+Route::put('pages/{page}', 'PageController@update');
+Route::delete('pages/{page}', 'PageController@delete');

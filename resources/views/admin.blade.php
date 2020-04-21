@@ -11,6 +11,11 @@
             </div>
         @endif
 
-        <user-list/>
+        <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="cell large-6"><user-list/></div>
+            <div class="cell large-6"><page-list/></div>
+        </div>
+
+
     </div>
 @endsection

@@ -4,6 +4,8 @@ $line-height-base: 1.6;
 $breakpoint-tablet: 1240px;
 $breakpoint-mobile: 768px;
 
+$border-radius: 1rem;
+
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Bitter|Open+Sans:300,600,700&display=swap');
 $primary-font-family: 'Open Sans', sans-serif;
@@ -26,7 +28,7 @@ $quaternary: #3e7e49;
 
 //Links
 $link-color: $secondary;
-$link-color-hover: $secondary;
+$link-color-hover: $black;
 $link-decoration: none;
 $link-decoration-hover: underline;
 

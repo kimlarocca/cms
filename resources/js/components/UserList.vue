@@ -1,12 +1,13 @@
 <template>
     <div class="container container-white">
+        <h3>User List</h3>
         <table class="text-left">
             <tr>
                 <th>Name</th>
                 <th>Email</th>
                 <th>ID</th>
             </tr>
-            <tr v-for="user in users">
+            <tr v-for="user in json">
                 <td>{{user.name}}</td>
                 <td>{{user.email}}</td>
                 <td>{{user.website_id}}</td>
@@ -22,14 +23,14 @@
         name: 'UserList',
         data () {
             return {
-                users: []
+                json: []
             }
         },
         mounted () {
             axios
             axios.get('/api/users')
                 .then(response => (
-                    this.users = response.data
+                    this.json = response.data
                 ))
         },
     }
